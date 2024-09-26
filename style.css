@@ -15,7 +15,7 @@ body {
 }
 
 .bg {
-  background: url('https://images.unsplash.com/photo-1576161787924-01bb08dad4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80')
+  background: url('https://plus.unsplash.com/premium_photo-1661848516540-48cb0c26233f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
     no-repeat center center/cover;
   position: absolute;
   top: -30px;
@@ -25,8 +25,26 @@ body {
   z-index: -1;
   filter: blur(0px);
 }
-
 .loading-text {
-  font-size: 50px;
-  color: #fff;
+  font-size: 30px;
+  color: #f89595;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(161, 236, 236);
+border-radius: 50%;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+border: 2px solid #f89595;
+animation: bounce 1s infinite;
 }
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
